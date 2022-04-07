@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>Exchange Calculator</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="favicon.ico">
     </head>
     <body>
         <img src="img/money.png" alt="money_img">
@@ -12,27 +13,29 @@
 
         <div class="container">
             <div class="currency">
-                <select name="" id="">
+                <select id="currency_one">
                     <option value="USD" selected>USD</option>
                     <option value="EUR">EUR</option>
-                    <option value="RMB">RMB</option>
+                    <option value="RUB">RUB</option>
                 </select>
-                <input type="number">
+                <input type="number" id="amount_one" value="1">
             </div>
 
             <div class="swap_rate_container">
-                <button>Swap</button>
-                <div class="rate"></div>
+                <button id="swap">Swap</button>
+                <div id="rate"></div>
             </div>
             
             <div class="currency">
-                <select name="" id="">
+                <select id="currency_two">
                     <option value="USD">USD</option>
                     <option value="EUR">EUR</option>
-                    <option value="RMB" selected>RMB</option>
+                    <option value="RUB" selected>RUB</option>
                 </select>
-                <input type="number">
+                <input type="number" id="amount_two" >
             </div>
         </div>
+
+        <script src="script.js"></script>
     </body>
 </html>
